@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutrition Lesson Planning Activities</title>
+  <style>
+    :root {
+      --navy: #003366;
+      --teal: #006666;
+      --gold: #cc9900;
+      --light: #f4f4f4;
+      --white: #ffffff;
+      --dark: #222222;
+      --border: #cccccc;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--navy);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      background-color: var(--teal);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:focus,
+    nav a:hover {
+      text-decoration: underline;
+      outline: 3px solid #ffff00;
+      outline-offset: 2px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    section {
+      background-color: var(--white);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: var(--navy);
+      border-bottom: 3px solid var(--gold);
+      padding-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      border: 2px solid var(--teal);
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #fdfdfd;
+    }
+
+    .card h3 {
+      color: var(--teal);
+      margin-top: 0;
+    }
+
+    button {
+      background-color: var(--navy);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    button:hover,
+    button:focus {
+      background-color: #001f3f;
+      outline: 3px solid #ffff00;
+      outline-offset: 2px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table th,
+    table td {
+      border: 1px solid var(--border);
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    table th {
+      background-color: var(--navy);
+      color: var(--white);
+    }
+
+    .quiz-box {
+      background-color: #eef7f7;
+      padding: 1rem;
+      border-left: 6px solid var(--teal);
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Health Studies: Nutrition Lesson Planning Activities</h1>
+    <p>Community College Freshman Course | Interactive Learning Module</p>
+  </header>
+
+  <nav aria-label="Main Navigation">
+    <a href="#objectives">Objectives</a>
+    <a href="#activities">Activities</a>
+    <a href="#meal">Meal Planning</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+
+  <main>
+    <section id="objectives">
+      <h2>Lesson Objectives</h2>
+      <ul>
+        <li>Understand the basic components of healthy nutrition.</li>
+        <li>Analyze healthy meal planning strategies.</li>
+        <li>Evaluate food choices using nutritional guidelines.</li>
+        <li>Create balanced meals using the MyPlate model.</li>
+      </ul>
+    </section>
+
+    <section id="activities">
+      <h2>Nutrition Planning Activities</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Activity 1: Food Label Investigation</h3>
+          <p>Students compare nutrition labels from packaged foods and identify sugar, sodium, and fiber content.</p>
+        </div>
+
+        <div class="card">
+          <h3>Activity 2: Healthy Grocery Budget</h3>
+          <p>Students plan healthy meals while staying within a weekly grocery budget.</p>
+        </div>
+
+        <div class="card">
+          <h3>Activity 3: MyPlate Meal Design</h3>
+          <p>Students design a balanced plate including fruits, vegetables, grains, protein, and dairy.</p>
+        </div>
+
+        <div class="card">
+          <h3>Activity 4: Nutrition Myth Debate</h3>
+          <p>Students work in groups to discuss and challenge common nutrition myths.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="meal">
+      <h2>Interactive Meal Planning Activity</h2>
+      <p>Type a healthy breakfast idea and receive instructor feedback.</p>
+
+      <label for="mealInput">Enter Your Meal Idea:</label>
+      <input type="text" id="mealInput" aria-describedby="mealHelp" placeholder="Example: Oatmeal with fruit and yogurt" />
+      <p id="mealHelp">Include at least one protein, fruit, or whole grain.</p>
+
+      <button onclick="analyzeMeal()">Analyze Meal</button>
+
+      <div id="feedback" class="quiz-box hidden" aria-live="polite"></div>
+    </section>
+
+    <section>
+      <h2>Sample Weekly Nutrition Plan</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Breakfast</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Oatmeal and berries</td>
+            <td>Turkey sandwich and salad</td>
+            <td>Grilled chicken with vegetables</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Eggs and whole wheat toast</td>
+            <td>Rice bowl with beans</td>
+            <td>Baked fish with brown rice</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Yogurt and banana</td>
+            <td>Chicken wrap and fruit</td>
+            <td>Vegetable pasta</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="quiz">
+      <h2>Quick Nutrition Quiz</h2>
+
+      <div class="quiz-box">
+        <p><strong>Question:</strong> Which food is considered a whole grain?</p>
+
+        <button onclick="checkAnswer('white')">White Bread</button>
+        <button onclick="checkAnswer('brown')">Brown Rice</button>
+        <button onclick="checkAnswer('chips')">Potato Chips</button>
+
+        <p id="quizResult" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Health Studies Department | Community College Nutrition Education Module</p>
+  </footer>
+
+  <script>
+    function analyzeMeal() {
+      const input = document.getElementById('mealInput').value.toLowerCase();
+      const feedback = document.getElementById('feedback');
+
+      let message = '';
+
+      if (input.includes('fruit') || input.includes('banana') || input.includes('berries')) {
+        message += 'Great job including fruit for vitamins and fiber. ';
+      }
+
+      if (input.includes('egg') || input.includes('yogurt') || input.includes('protein')) {
+        message += 'Excellent source of protein for energy and muscle support. ';
+      }
+
+      if (input.includes('oatmeal') || input.includes('whole grain') || input.includes('toast')) {
+        message += 'Whole grains help provide long-lasting energy. ';
+      }
+
+      if (message === '') {
+        message = 'Consider adding fruits, proteins, or whole grains to create a more balanced meal.';
+      }
+
+      feedback.textContent = message;
+      feedback.classList.remove('hidden');
+    }
+
+    function checkAnswer(answer) {
+      const result = document.getElementById('quizResult');
+
+      if (answer === 'brown') {
+        result.textContent = 'Correct! Brown rice is a whole grain rich in fiber.';
+      } else {
+        result.textContent = 'Incorrect. Try again and think about foods with less processing.';
+      }
+    }
+  </script>
+</body>
+</html>
